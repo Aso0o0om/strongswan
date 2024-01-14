@@ -26,7 +26,7 @@ the sections following below.
 
 ### Site-to-Site Case ###
 
-In this scenario two security gateways _moon_ and _sun_ will connect the
+In this scenarioo two security gateways _moon_ and _sun_ will connect the
 two subnets _moon-net_ and _sun-net_ with each other through a VPN tunnel
 set up between the two gateways:
 
