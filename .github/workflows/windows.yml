@@ -47,9 +47,10 @@ jobs:
           ccache -z
       - uses: ./.github/actions/default
       - run: ccache -s
-      - if: ${{ failure() }}
-        uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v3
+        if: always()
         with:
-          name: Logs ${{ github.job }}
-          path: config.log
+          name: Workspace Artifacts ${{ github.job }}
+          path: ${{ github.workspace }}/**
           retention-days: 5
+
